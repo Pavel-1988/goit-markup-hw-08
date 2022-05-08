@@ -1,0 +1,63 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    background-color: #ffffff;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header-portfolio {
+    border-bottom: 1px solid #ECECEC;
+}
+
+img {
+    display: block;
+}
+
+.item {
+    margin-right: 30px;
+
+    &:last-child {
+        margin-right: 0px;
+    }
+}
+
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.list-box {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+}
