@@ -1,6 +1,8 @@
 .header-box {
   display: flex;
   margin-bottom: -2px;
+
+
 }
 
 .nav-box {
@@ -11,6 +13,11 @@
 .nav-list {
   display: flex;
   margin-left: auto;
+  
+
+    @media (min-width: 480px) and (max-width: 768px) {
+      display: none;
+    }
 }
 
 .nav-list__item {
