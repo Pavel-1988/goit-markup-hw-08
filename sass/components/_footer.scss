@@ -5,15 +5,24 @@
 }
 
 .footer-box {
-    display: flex;
+    text-align: center;
+
+    @media (min-width: 1200px) {
+            display: flex;
+        }
+    
 }
 
 .footer-address-box {
-    margin-right: 70px;
+    
+
+    @media (min-width: 1200px) {
+            margin-right: 70px;
+        }
 }
 
 .ftr-logo {
-    display: block;
+    // display: block;
     margin-bottom: 20px;
 
     span {
@@ -23,7 +32,7 @@
 
 
 .address-list__item {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
 
     &:last-child {
         margin-bottom: 0px;
@@ -69,15 +78,28 @@ address {
 /** join and social media**/
 
 .join-box {
-    margin-top: 15px;
+    margin-top: 60px;
+    // text-align: center;
+
+    @media (min-width: 1200px) {
+            margin-top: 15px;
+        }
 }
+    
 
 .sm-flex-ftr {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     margin: 0px;
     padding: 0px;
+
+        @media (min-width: 1200px) {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+       
+        }
     
 }
 

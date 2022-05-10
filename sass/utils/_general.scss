@@ -8,6 +8,10 @@ body {
 
 .section {
 
+        padding-top: 60px;
+        padding-bottom: 60px;
+ 
+
     @media (min-width: 1200px) {
             padding-top: 94px;
             padding-bottom: 94px;
@@ -16,13 +20,14 @@ body {
 }
 
 .container {
-    // max-width: 1200px;
+    
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
 
     @media (min-width: 480px){
-        width:480px;
+        width:480px;  
+        margin: 0 auto;
     }
 
     @media (min-width: 768px) {
@@ -31,6 +36,7 @@ body {
 
     @media (min-width: 1200px) {
         width: 1200px;
+        margin: 0 auto;
     }
 
 }
@@ -58,10 +64,19 @@ img {
 
 .item {
     margin-right: 30px;
+    margin-bottom: 30px;
 
-    &:last-child {
+    &:nth-child(even){
         margin-right: 0px;
     }
+    &:nth-child(n+5) {
+        
+        margin-bottom: 0px;
+    }
+
+    
+
+
 }
 
 
@@ -79,9 +94,39 @@ img {
 }
 
 .list-box {
-    display: flex;
+    // display: flex;
     margin: 0px;
     padding: 0px;
 
+    @media (min-width: 480px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+    @media (min-width: 768px) {
+            display: flex;
+    }
+    
+    @media (min-width: 1200px) {
+        display: flex;
+    }
        
+}
+
+.title {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: $first-text-color;
+
+    @media (min-width: 1200px) {
+        font-size: 36px;
+        line-height: 1.16;
+        margin-bottom: 50px;
+        }
 }

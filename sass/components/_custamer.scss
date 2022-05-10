@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    Width: 170px;
+    Width: 210px;
     Height: 92px;
     border: 1px solid #AFB1B8;
     box-sizing: border-box;
@@ -16,6 +16,15 @@
     &:focus {
         border-color: #2196f3;
     }
+
+        @media (min-width:1200px) {
+            Width: 226px;
+        }
+
+        @media (min-width:1200px) {
+            Width: 170px;
+        }
+        
 }
 
 .custamer-icon {
