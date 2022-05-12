@@ -2,19 +2,25 @@
     display: flex;
     margin-left: auto;
 
-    @media (min-width: 480px) and (max-width: 768px) {
-    display: none;
-    }
+        @media (min-width: 480px) and (max-width: 768px) {
+        display: none;
+        }
 
     
-    // @media (min-width:768px){
-    //     display: block;
-    //     margin-right: 0px;
-    //     margin-left: 84px;
-    //     margin-top: 21px;
-    //     margin-bottom: 21px;  
-    //     }
-           
+        @media (min-width:768px){
+            display: block;
+            margin-right: 0px;
+            margin-left: 84px;
+            padding-top: 21px;
+            padding-bottom: 21px;  
+        }
+
+        @media (min-width:1200px){
+            display: flex;
+            margin-left: auto;
+            padding-top: 32px;
+            padding-bottom: 32px;
+        }
     }
 
 
@@ -26,12 +32,27 @@
     &:last-child {
         margin-right: 0px;
     }
-      /**
-        @media (max-width:768px) {
+      
+        @media (min-width:768px) {
             margin-right: 0px;
             margin-left: auto;
+            margin-bottom: 10px;
+            
+            &:last-child{
+                margin-bottom: 0px;
+            }
+
         }
-        **/
+
+        @media (min-width:1200px) {
+        margin-bottom: 0px;
+        margin-right: 50px;
+        
+            &:last-child {
+                margin-right: 0px;
+            }
+        }
+        
 }
 
 
@@ -41,6 +62,7 @@
     padding-top: 32px;
     padding-bottom: 32px;
     font-weight: 500;
+    font-size: 12px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: $second-text-color;
@@ -50,28 +72,44 @@
     &:focus {
         color: $accent-color;
     }
-        /**
-        @media (max-width:768px) {
+        
+        @media (min-width:768px) {
         padding-top: 0px;
         padding-bottom: 0px;      
         }
-       **/
+
+                 @media (min-width:1200px) {
+                    font-size: 14px;
+                 }
+       
 
 }
 
 
 .envelope {
-    width: 16px;
-    height: 12px;
-    margin-right: 10px;
+    width: 14px;
+    height: 10px;
+    margin-right: 8px;
     fill: currentColor;
+
+        @media (min-width:1200px) {
+            width: 16px;
+            height: 12px;
+            margin-right: 10px;
+        }
     
 }
 
 .smartphone {
     width: 10px;
-    height: 16px;
-    margin-right: 10px;
+    height: 14px;
+    margin-right: 8px;
     fill: currentColor;
+
+    @media (min-width:1200px) {
+            width: 10px;
+            height: 16px;
+            margin-right: 10px;
+        }
     
 }

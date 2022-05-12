@@ -2,6 +2,7 @@
     margin-top: 60px;
     // text-align: center;
     
+   
 
         @media (min-width: 1200px) {
             margin-top: 15px;
@@ -21,10 +22,13 @@
 }
 
 .sub-form {
-   
+    
+    justify-content: center;
+    
     
     @media (min-width: 1200px) {
             display: flex;
+            
         }
 
 }
@@ -70,6 +74,7 @@
 
         @media (min-width: 1200px) {
             margin-left: 12px;
+            margin-top: 0px;
         }
 
 }
