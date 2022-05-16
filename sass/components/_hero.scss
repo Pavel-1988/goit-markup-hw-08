@@ -13,6 +13,9 @@
     background-position: center;
     background-size: cover;
 
+     
+        
+
     
         @media (min-width: 480px) {
             max-width: 480px;
@@ -29,15 +32,21 @@
         }
 
         @media (min-width: 1200px) {
-        max-width: 1600px;
-        height: 600px;
-        padding-top: 200px;
-        padding-bottom: 200px;
+            max-width: 1600px;
+            height: 600px;
+            padding-top: 200px;
+            padding-bottom: 200px;
         }
 
-          
-   
 }
+
+   @media  (min-device-pixel-ratio: 2),
+   (min-resolution: 192dpi),
+   (min-resolution: 2dppx) {
+       .hero {
+           background-image: url(../images/fototeam@2x.jpg);
+       }
+    }
 
 .hero__title {
     margin: 0px;

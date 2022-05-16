@@ -8,59 +8,31 @@
 
     
         @media (min-width:768px){
-            display: block;
-            margin-right: 0px;
-            margin-left: 84px;
-            padding-top: 21px;
-            padding-bottom: 21px;  
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 10px;
         }
 
         @media (min-width:1200px){
             display: flex;
-            margin-left: auto;
-            padding-top: 32px;
-            padding-bottom: 32px;
+           flex-direction: row;
+            gap: 50px;
         }
     }
 
 
 
 
-.contact-list__item {
-    margin-right: 50px;
+// .contact-list__item {
 
-    &:last-child {
-        margin-right: 0px;
-    }
-      
-        @media (min-width:768px) {
-            margin-right: 0px;
-            margin-left: auto;
-            margin-bottom: 10px;
-            
-            &:last-child{
-                margin-bottom: 0px;
-            }
-
-        }
-
-        @media (min-width:1200px) {
-        margin-bottom: 0px;
-        margin-right: 50px;
-        
-            &:last-child {
-                margin-right: 0px;
-            }
-        }
-        
-}
+// }
 
 
 .contact-list__link {
     display: flex;
     align-items: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
+   
     font-weight: 500;
     font-size: 12px;
     line-height: 1.14;
@@ -74,13 +46,15 @@
     }
         
         @media (min-width:768px) {
-        padding-top: 0px;
-        padding-bottom: 0px;      
+            padding-top: 0px;
+            padding-bottom: 0px;      
         }
 
-                 @media (min-width:1200px) {
-                    font-size: 14px;
-                 }
+        @media (min-width:1200px) {
+            font-size: 14px;
+            padding-top: 32px;
+            padding-bottom: 32px;
+        }
        
 
 }

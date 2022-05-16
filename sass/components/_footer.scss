@@ -1,34 +1,36 @@
-.section-ftr {
+.footer {
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: #2F303A;
 }
 
-.footer-box {
-    text-align: center;
+.footer-box{
 
-
-    @media (min-width: 768px) and (max-width: 1200px) {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-    @media (min-width: 1200px) {
-            display: flex;
-            text-align: left;
-        }
-    
-}
+    @media (min-width: 768px){
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+}   
 
 .footer-address-box {
-    
+    margin-bottom: 60px;
+    text-align: center;
 
-    @media (min-width: 1200px) {
-            margin-right: 70px;
-        }
+    @media (min-width:768px) {
+        margin-right: 165px;
+        margin-bottom: 0px;     
+    }
+
+    @media (min-width:1200px) {
+        margin-right: 85px;
+        margin-bottom: 0px;
+        text-align: left;
+    }
+
 }
-
+    
 .ftr-logo {
     // display: block;
     margin-bottom: 20px;
@@ -38,7 +40,6 @@
     }
 }
 
-
 .address-list__item {
     margin-bottom: 8px;
 
@@ -46,7 +47,6 @@
         margin-bottom: 0px;
     }
 }
-
 
 address {
     font-style: normal;
@@ -68,7 +68,6 @@ address {
 }
 
 
-
 .address-list__contact {
     font-weight: 400;
     font-size: 14px;
@@ -86,21 +85,26 @@ address {
 /** join and social media**/
 
 .join-box {
-    margin-top: 60px;
-    // text-align: center;
-
-    @media (min-width: 768px) {
-            margin-top: 5px;
-            margin-left: 65px;
-        }
+    
+    text-align: center;
 
     @media (min-width: 1200px) {
-            margin-top: 15px;
-            margin-left: 0px;
+        text-align-last: left;
+        margin-right: 93px;
             
         }
 }
-    
+
+.join-box__title{
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    margin: 0;
+    margin-bottom: 20px;
+    color: $white-text-color;
+}
 
 .sm-flex-ftr {
     display: flex;

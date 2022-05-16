@@ -1,5 +1,25 @@
 
+.custamer{
+    padding-top: 60px;
+        padding-bottom: 60px;
 
+
+        @media (min-width: 1200px) {
+            padding-top: 94px;
+            padding-bottom: 94px;
+        }
+}
+
+.custamer__list{
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+}
+
+.custamer__item{
+    margin: 15px;
+    // width: calc(50%-30px); - попробовать формулу
+}
 
 .custamer-link {
     display: flex;
