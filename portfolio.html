@@ -17,36 +17,87 @@
 </head>
 <body>
     <header class="header-portfolio">
-        <div class="container">
-            <div class="header-box">
-                <nav class="nav-box">
-                    <a href="./index.html" class="logo header-logo"> Web<span>Studio</span></a>
-                    <ul class="nav-list">
-                        <li class="nav-list__item"><a href="./index.html" class="nav-list__link ">Студия</a></li>
-                        <li class="nav-list__item"><a href="./portfolio.html" class="nav-list__link current">Портфолио</a></li>
-                        <li class="nav-list__item"><a href="#" class="nav-list__link">Контакты</a></li>
-                    </ul>
-                </nav>
-                <ul class="contact-list">
-                    <li class="contact-list__item">
-                        <a href="mailto:info@devstudio.com" class="contact-list__link">
-                            <svg class="envelope">
-                                <use href="./images/symbol-defs.svg#icon-envelope"></use>
-                            </svg>
+<div class="container">
+    <div class="header-box">
+        <nav class="nav-box">
+            <a href="./index.html" class="logo header-logo"> Web<span>Studio</span></a>
+            <ul class="nav-list">
+                <li class="nav-list__item"><a href="./index.html" class="nav-list__link ">Студия</a></li>
+                <li class="nav-list__item"><a href="./portfolio.html" class="nav-list__link current">Портфолио</a></li>
+                <li class="nav-list__item"><a href="#" class="nav-list__link">Контакты</a></li>
+            </ul>
+        </nav>
+        <ul class="contact-list">
+            <li class="contact-list__item">
+                <a href="mailto:info@devstudio.com" class="contact-list__link">
+                    <svg class="envelope">
+                        <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                    </svg>
+                    info@devstudio.com
+                </a>
+            </li>
+            <li class="contact-list__item">
+                <a href="tel:+380961111111" class="contact-list__link">
+                    <svg class="smartphone">
+                        <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                    </svg>
+                    +38 096 111 11 11
+                </a>
+            </li>
+        </ul>
+        <button class="burger-menu" type="button" data-mob-nav-open>
+            <svg class="burger-menu__icon" aria-label="переключатель мобильного меню">
+                <use href="/images/burger-sprite.svg#burger-menu-24px"></use>
+            </svg>
+        </button>
+        <div class="mob-nav is-hidden" data-mob-nav>
+            <button class="mob-nav__close-btn" type="button" data-mob-nav-close>
+                <svg class="mob-nav__icon-close">
+                    <use href="/images/burger-sprite.svg#burger-close"></use>
+                </svg>
+            </button>
+            <div class="mob-nav__box">
+                <ul class="mob-nav__nav-list">
+                    <li class="mob-nav__item">
+                        <a href="./" class="mob-nav__link mob-nav__link--current">Студия </a>
+                    </li>
+                    <li class="mob-nav__item">
+                        <a href="./portfolio.html" class="mob-nav__link mob-nav__link--curren">Портфолио </a>
+                    </li>
+                    <li class="mob-nav__item">
+                        <a href="./" class="mob-nav__link">Контакты </a>
+                    </li>
+                </ul>
+                <ul class="mob-nav__contact-list">
+                    <li class="mob-nav__item">
+                        <a href="tel:+380961111111" class="mob-nav__phone">
+                            +38 096 111 11 11
+                        </a>
+                    </li>
+                    <li class="mob-nav__item">
+                        <a href="mailto:info@devstudio.com" class="mob-nav__mail">
                             info@devstudio.com
                         </a>
                     </li>
-                    <li class="contact-list__item">
-                        <a href="tel:+380961111111" class="contact-list__link">
-                            <svg class="smartphone">
-                                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-                            </svg>
-                            +38 096 111 11 11
-                        </a>
+                </ul>
+                <ul class="mob-nav__sm">
+                    <li class="mob-nav__sm-item">
+                        <a href="#" class="mob-nav__social-link">Instagram</a>
+                    </li>
+                    <li class="mob-nav__sm-item">
+                        <a href="#" class="mob-nav__social-link">Twitter</a>
+                    </li>
+                    <li class="mob-nav__sm-item">
+                        <a href="#" class="mob-nav__social-link">Facebooc</a>
+                    </li>
+                    <li class="mob-nav__sm-item">
+                        <a href="#" class="mob-nav__social-link">Linkedin</a>
                     </li>
                 </ul>
             </div>
         </div>
+    </div>
+</div>
     </header>
     <main>
         <!--buttons-->
@@ -232,7 +283,7 @@
                                 <p class="projects-list__overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
                                 этопозволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                             </div>
-                            <div class="projects-items">
+                            <div class="project-list__description">
                                 <h3 class="project-list__name" >Growing Business</h3>
                                 <p class="projects-list__type" >Приложение</p>
                             </div>
@@ -261,30 +312,30 @@
                 </div>
                 <div class="join-box">
                     <p class="join-box__title"> присоединяйтесь</p>
-                    <ul class="sm-flex-ftr">
-                        <li class="sm-box__list">
-                            <a href="#" class="sm-box__link sm-box__link--color">
+                    <ul class="join-box__list">
+                        <li class="join-box__item">
+                            <a href="#" class="join-box__link">
                                 <svg class="ftr-sm-icon" width="20" height="20">
                                     <use href="./images/symbol-defs.svg#icon-instagram-2"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li class="sm-box__list">
-                            <a href="#" class="sm-box__link sm-box__link--color">
+                        <li class="join-box__item">
+                            <a href="#" class="join-box__link">
                                 <svg class="ftr-sm-icon" width="20" height="20">
                                     <use href="./images/symbol-defs.svg#icon-twitter-1"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li class="sm-box__list">
-                            <a href="#" class="sm-box__link sm-box__link--color">
+                        <li class="join-box__item">
+                            <a href="#" class="join-box__link">
                                 <svg class="ftr-sm-icon" width="20" height="20">
                                     <use href="./images/symbol-defs.svg#icon-facebook-1"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li class="sm-box__list">
-                            <a href="#" class="sm-box__link sm-box__link--color">
+                        <li class="join-box__item">
+                            <a href="#" class="join-box__link">
                                 <svg class="ftr-sm-icon" width="20" height="20">
                                     <use href="./images/symbol-defs.svg#icon-linkedin-1"></use>
                                 </svg>
@@ -308,5 +359,6 @@
             </div>
         </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>

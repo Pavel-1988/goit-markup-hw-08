@@ -1,7 +1,5 @@
 
-
 .sub-form {
-
     margin-top: 60px;
     text-align: center;
 
@@ -15,7 +13,6 @@
 
 
 .sub-form__title {
-
     font-weight: 700;
     font-size: 14px;
     text-transform: uppercase;
@@ -51,6 +48,7 @@
         @media (min-width: 1200px) {
             display: flex;
             width: 358px;
+            min-width: auto;
             margin-bottom: 0px;
         }
 

@@ -4,24 +4,24 @@ body {
     background-color: #ffffff;
 }
 
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 
+a {
+    text-decoration: none;
+}
 
-.section {
-
-        padding-top: 60px;
-        padding-bottom: 60px;
- 
-
-    @media (min-width: 1200px) {
-            padding-top: 94px;
-            padding-bottom: 94px;
-        }
-    
+img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 .container {
     max-width: 480px;
-    margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -39,110 +39,12 @@ body {
 }
 
 
-ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-}
-
 .header-portfolio {
     border-bottom: 1px solid #ECECEC;
 }
 
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
-.item {
-
-@media (min-width: 480px) and (max-width: 768px) {
-        margin-right: 30px;
-        margin-bottom: 30px;
-
-        &:nth-child(even){
-            margin-right: 0px;
-        }
-        &:nth-child(n+5) {
-            margin-bottom: 0px;
-        }
-   
-    }
-        @media (min-width: 768px) and (max-width: 1200px){
-                margin-right: 30px;
-                margin-bottom: 30px;
-            
-            &:nth-child(n+4) {
-                margin-bottom: 0px;
-            }
-            &:nth-child(3) {
-                margin-right: 0px;
-            }
-            &:nth-child(6) {
-                margin-right: 0px;
-            }
-        }
-
-                @media (min-width: 1200px) {
-                    margin-right: 30px;
-                    margin-bottom: 0px;
-                    &:last-child{
-                        margin-right: 0px;
-                    }
-        
-                }
 
 
-
-}
-
-
-
-
-.list-box {
-    display: flex;
-    margin: 0px;
-    padding: 0px;
-
-    @media (min-width: 480px) {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-    @media (min-width: 768px) {
-            display: flex;
-            flex-wrap: wrap;
-           
-    }
-    
-    @media (min-width: 1200px) {
-        display: flex;
-    }
-       
-}
-
-.title {
-    text-align: center;
-    margin-top: 0px;
-    margin-bottom: 30px;
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    color: $first-text-color;
-
-    @media (min-width: 1200px) {
-        font-size: 36px;
-        line-height: 1.16;
-        margin-bottom: 50px;
-        }
-}
 
 .visually-hidden {
     position: absolute;

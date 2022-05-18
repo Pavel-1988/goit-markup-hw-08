@@ -102,13 +102,16 @@
 
 .projects-list__item {
    max-width: 100%;
+    margin-bottom: 30px;
 
         @media (min-width: 768px){
-            max-width: 354px;          
+            max-width: 354px;
+            margin-bottom: 0px;
         }
 
         @media (min-width: 1200px) {
             max-width: 370px;
+            margin-bottom: 0px;
         }
             
 }

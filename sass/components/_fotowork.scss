@@ -1,38 +1,42 @@
 
-.section-fotowork {
-
-
-    // padding-top: 94px;
-    // padding-bottom: 94px;
-
-    @media (min-width: 480px) and (max-width: 1200px) {
-            display: none;
-            padding: 0;
-        }
+.fotowork {
+    display: none;
+    padding: 0;
 
     @media (min-width: 1200px){
+        display: flex;
             padding-top: 94px;
             padding-bottom: 94px;
     }
 
 } 
 
+.fotowork__title{
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: $first-text-color; 
+}
 
+.fotowork__list{
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+}
 
-// .container-fotowork {
-//     max-width: 1200px;
-//     margin: 0 auto;
-//     padding-left: 15px;
-//     padding-right: 15px;    
-
-
-
-.item--position {
+.fotowork__item {
     position: relative;
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
 }
 
 
-.foto-text {
+.fotowork__text {
     position: absolute;
     bottom: 0;
     right: 0;

@@ -1,8 +1,7 @@
 
 .custamer{
     padding-top: 60px;
-        padding-bottom: 60px;
-
+    padding-bottom: 60px;
 
         @media (min-width: 1200px) {
             padding-top: 94px;
@@ -10,22 +9,46 @@
         }
 }
 
+.custamer__title{
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: $first-text-color;
+
+        @media (min-width: 1200px) {
+            font-size: 36px;
+            line-height: 1.16;
+            margin-bottom: 50px;
+        }
+}
+
 .custamer__list{
     display: flex;
     flex-wrap: wrap;
-    margin: -15px;
+    gap: 30px;
 }
 
 .custamer__item{
-    margin: 15px;
-    // width: calc(50%-30px); - попробовать формулу
+    width: 210px;
+
+    @media (min-width:768px) {
+            Width: 226px;
+        }
+    
+        @media (min-width:1200px) {
+            Width: 170px;
+        }
 }
 
 .custamer-link {
     display: flex;
     align-items: center;
     justify-content: center;
-    Width: 210px;
+    Width: 100%;
     Height: 92px;
     border: 1px solid #AFB1B8;
     box-sizing: border-box;
@@ -41,13 +64,7 @@
         border-color: #2196f3;
     }
 
-        @media (min-width:768px) {
-            Width: 226px;
-        }
-
-        @media (min-width:1200px) {
-            Width: 170px;
-        }
+      
         
 }
 
