@@ -432,10 +432,6 @@ img {
   color: #2196f3;
 }
 
-.mob-nav__social-link:first-child {
-  padding-left: 0px;
-}
-
 .hero {
   text-align: center;
   padding-top: 118px;
@@ -476,15 +472,15 @@ img {
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/fototeam.jpg);
-    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/fototeam.jpg);
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/fototeam.jpg);
+    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/fototeam.jpg);
   }
 }
 
 @media (min-width: 1200px) and (min-device-pixel-ratio: 2), (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 192dpi), (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/fototeam@2x.jpg);
-    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/fototeam@2x.jpg);
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/fototeam@2x.jpg);
+    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/fototeam@2x.jpg);
   }
 }
 
@@ -647,6 +643,7 @@ img {
 .fotowork__title {
   text-align: center;
   margin-bottom: 50px;
+  margin-top: 0px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -766,6 +763,7 @@ img {
 @media (min-width: 1200px) {
   .team__item {
     max-width: 270px;
+    margin-bottom: 0px;
   }
 }
 
@@ -1256,7 +1254,7 @@ address {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .buttons-box {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1264,7 +1262,7 @@ address {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
   }
 }
 
@@ -1455,6 +1453,7 @@ address {
   width: 100%;
   height: 100%;
   opacity: 1;
+  overflow-y: scroll;
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
