@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: 'Roboto', sans-serif;
   color: black;
@@ -123,23 +124,20 @@ img {
   display: flex;
 }
 
-.nav-list {
+.nav-box__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 50px;
 }
 
 @media (max-width: 768px) {
-  .nav-list {
+  .nav-box__list {
     display: none;
   }
 }
 
-.nav-list__item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.nav-list__link {
+.nav-box__link {
   position: relative;
   display: block;
   padding-top: 32px;
@@ -153,11 +151,11 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-list__link:hover, .nav-list__link:focus {
+.nav-box__link:hover, .nav-box__link:focus {
   color: #2196f3;
 }
 
-.nav-list__link::after {
+.nav-box__link::after {
   content: '';
   position: absolute;
   left: 0;
@@ -172,7 +170,7 @@ img {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-list__link:hover::after {
+.nav-box__link:hover::after {
   opacity: 1;
 }
 
@@ -423,6 +421,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .mob-nav__sm-item {
@@ -673,8 +673,6 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0px;
-  padding: 0px;
 }
 
 .fotowork__item {
@@ -689,13 +687,13 @@ img {
   position: absolute;
   bottom: 0;
   right: 0;
-  text-align: center;
   margin: 0px;
   padding: 27px 0px;
   width: 100%;
+  text-align: center;
+  text-transform: uppercase;
   font-weight: 700;
   font-size: 14px;
-  text-transform: uppercase;
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: #FFFFFF;
@@ -703,9 +701,9 @@ img {
 }
 
 .team {
-  background-color: #F5F4FA;
   padding-top: 60px;
   padding-bottom: 60px;
+  background-color: #F5F4FA;
 }
 
 @media (min-width: 1200px) {
@@ -716,21 +714,21 @@ img {
 }
 
 .team__title {
-  text-align: center;
   margin-top: 0px;
   margin-bottom: 30px;
   font-weight: 700;
   font-size: 28px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  text-align: center;
   color: #212121;
 }
 
 @media (min-width: 1200px) {
   .team__title {
+    margin-bottom: 50px;
     font-size: 36px;
     line-height: 1.16;
-    margin-bottom: 50px;
   }
 }
 
@@ -764,12 +762,12 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 30px;
   max-width: 450px;
   background: #FFFFFF;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  margin-bottom: 30px;
 }
 
 @media (min-width: 768px) {
@@ -803,30 +801,30 @@ img {
 }
 
 .team-box__name {
-  color: #212121;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
   text-align: center;
-  margin: 0px 0px 10px 0px;
+  color: #212121;
 }
 
 .team-box__position {
-  color: #757575;
+  margin: 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
   text-align: center;
-  margin: 0;
+  color: #757575;
 }
 
 .sm-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0px;
+  margin-top: 16px;
   padding: 0px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -834,20 +832,13 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 16px;
 }
 
-.sm-box__list {
+.sm-box__list:not(:last-child) {
   margin-right: 10px;
 }
 
-.sm-box__list:last-child {
-  margin-right: 0px;
-}
-
 .sm-box__link {
-  width: 44px;
-  height: 44px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -857,6 +848,8 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 44px;
+  height: 44px;
   border-radius: 50px;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -915,8 +908,9 @@ img {
   gap: 30px;
 }
 
+/** попробовать формулу,тк ломаеться менее 320**/
 .custamer__item {
-  width: 210px;
+  width: calc(50% - 15px);
 }
 
 @media (min-width: 768px) {
@@ -1490,8 +1484,8 @@ address {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 450px;
-  height: 610px;
+  width: calc(100% - 40px);
+  max-width: 450px;
   background-color: #FFFFFF;
   border-radius: 4px;
   -webkit-transform: translate(-50%, -50%) scale(1);
@@ -1500,8 +1494,7 @@ address {
 
 @media (min-width: 1200px) {
   .modal {
-    width: 530px;
-    height: 580px;
+    max-width: 528px;
   }
 }
 

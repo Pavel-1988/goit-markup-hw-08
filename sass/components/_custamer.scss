@@ -32,10 +32,12 @@
     gap: 30px;
 }
 
+/** попробовать формулу,тк ломаеться менее 320**/
 .custamer__item{
-    width: 210px;
+    width: calc(50% - 15px);
+ 
 
-    @media (min-width:768px) {
+        @media (min-width:768px) {
             Width: 226px;
         }
     
@@ -63,9 +65,6 @@
     &:focus {
         border-color: #2196f3;
     }
-
-      
-        
 }
 
 .custamer-icon {

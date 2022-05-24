@@ -23,15 +23,16 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 450px;
-    height: 610px;
+    width: calc(100% - 40px);;
+    max-width: 450px;
+    // height: 610px;
     background-color: #FFFFFF;
     border-radius: $main-border-radius;
     transform: translate(-50%, -50%) scale(1);
 
         @media (min-width: 1200px) {
-            width: 530px;
-            height: 580px;
+            max-width: 528px;
+            // height: 580px;
         }
 }
 
